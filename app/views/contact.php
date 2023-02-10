@@ -7,3 +7,7 @@
 	<input type="text" name="email" placeholder="email">
 	<button type="submit">Enviar</button>
 </form>
+
+<form action="/">
+    <input type="submit" value="Go to Home" />
+</form>
