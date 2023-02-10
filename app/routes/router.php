@@ -30,11 +30,12 @@ function load(string $controller, string $action)
 }
 
 $router = [
-    //criação do GET -> Home e Contact
+    //criação do GET -> Home, Contact e Faq
     //usar arrow function para não precisar dar um echo na rota no index.php
     'GET' => [
         '/' => fn() => load("HomeController", "index"),
         '/contact' => fn() => load("ContactController", "index"),
+        '/faq' => fn() => load("FaqController", "index")
     ],
 
     //criação do POST -> Contact
